@@ -11,6 +11,9 @@ env:
   SUBSCRIPTION-ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
   WEBAPP-NAME: az2006app3558
 
+permissions:
+  id-token: write
+
 jobs:
   #Build, test and publish .net web project in repository
   buildandtest:
